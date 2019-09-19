@@ -1,13 +1,32 @@
 public class EndangeredAnimal  {
-    int id;
-    String name;
-    public String health;
+    public String name;
+    public int id;
+    public boolean endangered;
+    private String health;
+    private String age;
 
-    public void EndangeredAnimal( int id,String name){
+
+    public EndangeredAnimal(String name){
         this.name=name;
+        this.id=id;
 
-
+        this.health=health;
+        this.age=age;
 
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public int getId() {
+        return id;
+    }
+    public String getHealth() {
+        return health;
+    }
+
+    public String getAge() {
+        return age;
+    }
 }
