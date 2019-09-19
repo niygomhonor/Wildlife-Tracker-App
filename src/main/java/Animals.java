@@ -7,4 +7,11 @@ public Animals(String name,int animal_id){
 this.id=animal_id;
 }
 
-}
+     public String getName() {
+    return name;
+     }
+
+     public int getAnimalId() {
+    return id;
+     }
+ }
