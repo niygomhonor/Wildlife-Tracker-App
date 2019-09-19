@@ -7,12 +7,21 @@ public class Sightings {
     private int id;
     private Timestamp date;
 
-    public Sightings(int animal_Id, String location, String rangerNameame) {
+    public Sightings(int animal_Id, String location, String rangerName) {
         this.animal_Id = animal_Id;
         this.location = location;
         this.rangerName = rangerName;
         this.id = id;
         this.date = date;
+    }
+    @Override
+    public boolean equals(Object otherSighting) {
+        if(!(otherSighting instanceof Sightings)) {
+            return false;
+        } else {
+            Sightings newSighting = (Sightings) otherSighting;
+            return this.getAnimalId() == (newSighting.getAnimalId()) && this.getLocation().equals(newSighting.getLocation()) && this.getRangerName().equals(newSighting.getRangerName());
+        }
     }
     public int getId() {
         return id;
