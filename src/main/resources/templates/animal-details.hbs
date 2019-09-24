@@ -1,0 +1,72 @@
+
+{{#partial "content"}}
+    <div class=" container-fluid">
+        <div class="row">
+            <div class="col-sm-2">
+                <h4>ANIMALS</h4>
+             {{#if endangeredAnimals}}
+                <p>{{#each endangeredAnimals}}<h5>{{name}}</h5>{{/each}}
+
+                  {{else}}
+                     <p>No Animal</p>
+                {{/if}}
+                </p>
+            </div>
+
+
+            <div class="col-sm-2">
+                <p><strong>ANIMAL LOCATION</strong></p>
+                {{#if allSightings}}
+                    {{#each allSightings}}
+                        <p><strong>{{location}}</strong></p>
+                    {{/each}}
+                {{else}}
+                    <p>No Animal location yet</p>
+                {{/if}}
+            </div>
+            <div class="col-sm-2">
+                <p><strong>RANGER NAME</strong></p>
+                {{#if allSightings}}
+                    {{#each allSightings}}
+                        <p><strong>{{rangerName}}</strong></p>
+                    {{/each}}
+                {{else}}
+                    <p>No Ranger yet</p>
+                {{/if}}
+            </div>
+            <div class="col-sm-2">
+                <p><strong>HEALTH OF ANIMAL</strong></p>
+                {{#if endangeredAnimals}}
+                    {{#each endangeredAnimals}}
+                        <p><strong>{{health}}</strong></p>
+                    {{/each}}
+                {{else}}
+                        <p>No Health</p>
+                {{/if}}
+
+            </div>
+            <div class="col-sm-2">
+                <p><strong>AGE OF ANIMAL</strong></p>
+                {{#if endangeredAnimals}}
+                    {{#each endangeredAnimals}}
+                        <p>{{age}}</p>
+                    {{/each}}
+                {{else}}
+                        <p>No Age yet</p>
+                {{/if}}
+
+            </div>
+            <div class="col-sm-2">
+                <h4>TIME</h4>
+                {{#if allSightings}}
+                    {{#each allSightings}}
+                        <p><strong>{{lastDate}}</strong></p>
+                    {{/each}}
+                {{else}}
+                    <p>No time yet</p>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+{{/partial}}
+{{> layout.hbs}}

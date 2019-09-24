@@ -20,13 +20,12 @@ public class AnimalsTest {
     }
 
 
-
     @Test
-    public void equals_returnsTrueIfNameIsTheSame(){
+    public void equals_returnsTrueIfNameIsTheSame() {
 
-        Animals animalTest=new Animals("Dog");
-        Animals secondAnimal=new Animals("Deer");
-        assertTrue(String.valueOf(animalTest),equals(secondAnimal));
+        Animals animalTest = new Animals("Dog");
+        Animals secondAnimal = new Animals("Deer");
+        assertTrue(String.valueOf(animalTest), equals(secondAnimal));
     }
 
 }
