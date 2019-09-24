@@ -28,12 +28,5 @@ public class AnimalsTest {
         Animals secondAnimal=new Animals("Deer");
         assertTrue(String.valueOf(animalTest),equals(secondAnimal));
     }
-            @Test
-  public void find_returnsAnimalWithSameId_secondAnimal() {
-    Animals firstAnimal = new Animals("Deer");
-    firstAnimal.save();
-    Animals secondAnimal = new Animals("Black Bear");
-    secondAnimal.save();
-    assertEquals(Animals.find(secondAnimal.getAnimalId()), secondAnimal);
-  }
+
 }
