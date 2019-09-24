@@ -48,5 +48,10 @@ This application will allow user to design his desired hero and put him in any s
      +  Facebook:NIYONKURU Neodo Honorine
      +  Slack:NIYONKURU Honorine
 
+     
+### LISENCE
+- [x] MIT
+
+Copyright &copy; [2019] NIYONKURU Honorine
 
 
