@@ -1,6 +1,7 @@
 import org.sql2o.Connection;
 
 import java.sql.Timestamp;
+import java.util.Collection;
 import java.util.List;
 
 public class Sightings implements Data{
@@ -68,4 +69,6 @@ public class Sightings implements Data{
             this.id = (int) con.createQuery(sql, true).addParameter("rangerName", this.rangerName).addParameter("location", this.location).throwOnMappingFailure(false).executeUpdate().getKey();
         }
     }
+
+
 }
