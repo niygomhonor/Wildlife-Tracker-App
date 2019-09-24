@@ -8,6 +8,7 @@
   - [x] App description
   - [x]  Technologies used
   - [x]  Installation
+  - [x] User Story
   - [x]  Contacts
   - [x]  License
 
@@ -35,6 +36,13 @@ This application will allow Rangers to track wildlife sightings in the area.
  1. Install  `IntelliJ IDEAL Community Edition`
  2. Clone this repository
  3. Open it within IntelliJ
+ 
+ 
+ ###  User story(BDD)
+ 
+|USER INPUT     |  EXPECTED OUTPUT|
+|---------------|-----------------|
+|Name of the animal
    
   ### CONTACTS
   
