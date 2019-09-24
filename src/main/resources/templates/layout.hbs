@@ -1,0 +1,31 @@
+{{#block "header"}}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel='stylesheet' href="/css/styles.css">
+</head>
+<body>
+<div class="container">
+    {{#block "content"}}
+    {{/block}}
+
+
+</div>
+{{#block "footer"}}
+    <footer class="footer">
+        <div class="container">
+            <hr>
+            <p class="text-muted">
+                {{!--               <a href="/categories/delete">delete all categories & tasks</a><br> --}}
+                {{!--               <a href="/tasks/delete">delete all tasks</a> --}}
+            </p>
+        </div>
+    </footer>
+    {{/block}}
+</body>
+</html>
+{{/block}}
