@@ -5,7 +5,10 @@ import static org.junit.Assert.*;
 
 public class AnimalsTest {
     @Test
-    public void Animals_instantiatesCorrectly_true() {
+
+
+    public void Animals_instantiatesCorrectly_true() throws Exception {
+
         Animals animalTest = new Animals("Dog");
         assertEquals(true, animalTest instanceof Animals);
 
