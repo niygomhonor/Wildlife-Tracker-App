@@ -1,5 +1,4 @@
 # Wildlife-Tracker-App
-This application will allow Rangers to track wildlife sightings in the area.
 
 ## Author 
 
@@ -14,7 +13,8 @@ This application will allow Rangers to track wildlife sightings in the area.
 
 ### APPLICATION DESCRIPTION
 
-This application will allow user to design his desired hero and put him in any squad he/she want.
+This application will allow Rangers to track wildlife sightings in the area.
+
 
  ### TECHNOLOGIES USED
  
