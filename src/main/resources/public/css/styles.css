@@ -1,4 +1,19 @@
-
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
 body{
-background-image:url("images/image1.jpeg");
+background-image:url("/images/bg.jpg");
+background-size:cover;
+}
+h1,thead,td{
+color:white;
+font-family: 'Fredoka One', cursive;
+}
+pre{
+color:white;
+font-family: 'Fredoka One', cursive;
+
+}
+h2,h3,h4,h5,label,p{
+color:white;
+font-family: 'Fredoka One', cursive;
+
 }
