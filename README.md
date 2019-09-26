@@ -7,7 +7,7 @@
 ## OVER VIEW OF THIS PROJECT
 Project screenshoots
 <img src="Pictures/wild_tracker_homepage.png">
-
+<img src="Pictures/database_result.png">
 ## Contents are the following
   - [x] App description
   - [x]  Technologies used
