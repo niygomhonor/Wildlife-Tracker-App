@@ -15,20 +15,15 @@ public class SightingsTest {
 
     @Test
     public void getName_personInstantiatesWithName_John() {
-        Sightings testSighting = new Sightings("Jack", "North Forest");
+        Sightings testSighting = new Sightings("Zone A", "Jack");
         assertEquals("John", testSighting.getRangerName());
     }
 
-    @Test
-    public void getAnimalId_instantiatesWithAnimalId_int() {
-        Sightings testSighting = new Sightings("Zone A", "Jack");
-        assertEquals(1, testSighting.getAnimalId());
-    }
 
     @Test
-    public void getLocation_sightingInstatiatesWithLocation_StrJacking() {
+    public void getLocation_sighting_Instantiates_WithLocation_SirJacking() {
         Sightings testSighting = new Sightings("Zone A", "Jose");
-        assertEquals("North Forest", testSighting.getLocation());
+        assertEquals("Zon e A", testSighting.getLocation());
     }
 
     @Test
@@ -42,7 +37,7 @@ public class SightingsTest {
     public void save_insertsObjectIntoDatabase_Sighting() {
         Sightings testSighting = new Sightings("Zone A", "Jack");
         testSighting.save();
-        assertTrue(Sightings.all().get(0).equals(testSighting));
+        assertTrue(Sightings.all().equals(testSighting));
     }
 
     @Test
@@ -51,17 +46,11 @@ public class SightingsTest {
         firstSighting.save();
         Sightings secondSighting = new Sightings("Zone C", "Honoria");
         secondSighting.save();
-        assertEquals(true, Sightings.all().get(0).equals(firstSighting));
-        assertEquals(true, Sightings.all().get(1).equals(secondSighting));
+        assertTrue(Sightings.all().equals(firstSighting));
+        assertTrue(Sightings.all().equals(secondSighting));
     }
 
-    @Test
-    public void save_assignedIdToSavedObjects() {
-        Sightings testSighting = new Sightings("Zone A", "Jacky");
-        testSighting.save();
-        Sightings anotherSighting = Sightings.all().get(0);
-        assertEquals(testSighting.getId(), anotherSighting.getId());
-    }
+
 
     @Test
     public void find_findObjectWithId() {

@@ -77,11 +77,12 @@ public class App {
 
         }, new HandlebarsTemplateEngine());
 
-        get("/animals/:id", (req, res) -> {
+
+
+        get("/welcome", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
-            int animalId = Integer.parseInt(req.queryParams("id"));
-            Animals.find(animalId);
-            return new ModelAndView(model, "animal-details.hbs");
+
+            return new ModelAndView(model, "welcome_post.hbs");
         }, new HandlebarsTemplateEngine());
 
 

@@ -4,6 +4,10 @@
 
 `NIYONKURU Honorine`
 
+## OVER VIEW OF THIS PROJECT
+Project screenshoots
+<img src="Pictures/wild_tracker_homepage.png">
+
 ## Contents are the following
   - [x] App description
   - [x]  Technologies used

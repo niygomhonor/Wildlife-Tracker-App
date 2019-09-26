@@ -21,13 +21,13 @@
             <h1>Animal details</h1>
 
             {{#if animalName}}
-                {{#each animalName}}
+
                     <h5> Name:{{animalName}}</h5>
                     <h5>Reported by: {{rangerName}}</h5>
                     <h5>Location:{{location}}</h5>
                     <h5>Health: {{health}}</h5>
                     <h5>Age: {{age}}</h5>
-                {{/each}}
+
             {{else}}
                 <p>To report a sighting, please visit the <a href="/">home page</a>.</p>
             {{/if}}
