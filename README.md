@@ -4,6 +4,10 @@
 
 `NIYONKURU Honorine`
 
+## OVER VIEW OF THIS PROJECT
+Project screenshoots
+<img src="Pictures/wild_tracker_homepage.png">
+<img src="Pictures/database_results.png">
 ## Contents are the following
   - [x] App description
   - [x]  Technologies used
@@ -37,6 +41,10 @@ This application will allow Rangers to track wildlife sightings in the area.
  2. Clone this repository
  3. Open it within IntelliJ
  
+ 
+ ####  Visit this link to post any animal in sight
+ 
+ - [x] [Wildlife-Tracker-Project](https://neodo-wildlife.herokuapp.com)
  
  ###  User story(BDD)
  
